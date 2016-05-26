@@ -1,0 +1,29 @@
+<html ng-app="persianDatePicker">
+<head>
+    <meta charset="UTF-8">
+    <title>Persian DataPicker</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <persian-date-picker></persian-date-picker>
+    </div>
+    
+    
+    
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="scripts/module.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="bower_components/moment-jalaali/build/moment-jalaali.js"></script>
+    <script>
+        moment.loadPersian();
+    </script>
+    <script src="scripts/components/calendar.component.js"></script>
+    <script src="scripts/components/calendar-header.component.js"></script>
+    <script src="scripts/components/calendar-week-name.component.js"></script>
+    <script src="scripts/components/calendar-days.component.js"></script>
+</body>
+</html>

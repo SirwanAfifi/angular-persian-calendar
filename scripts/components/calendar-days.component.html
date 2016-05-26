@@ -1,0 +1,9 @@
+<div class="week" ng-repeat="week in model.weeks">
+    <span 
+        class="day" 
+        ng-click="model.parent.select(day)"
+        ng-class="{ today: day.isToday, 'different-month': !day.isCurrentMonth, selected: day.date.isSame(selected) }"  
+        ng-repeat="day in week.days">
+            {{day.number}}
+    </span>
+</div>

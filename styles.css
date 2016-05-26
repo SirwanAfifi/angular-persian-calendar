@@ -1,0 +1,81 @@
+persian-date-picker {
+    float: left;
+    display: block;
+    background: white;
+    width: 300px;
+    border: solid 1px #cccccc;
+    margin-bottom: 10px;
+}
+persian-date-picker > calendar-header.header {
+    float: left;
+    width: 100%;
+    background: #2875c7;
+    height: 40px;
+    color: white;
+}
+persian-date-picker > calendar-header.header > i {
+    float: left;
+    width: 40px;
+    font-size: 1.125em;
+    font-weight: bold;
+    position: relative;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0 10px;
+    cursor: pointer;
+}
+persian-date-picker > calendar-header.header > span {
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-left: 50px;
+    margin-left: -40px;
+    text-align: center;
+    padding-right: 40px;
+    color: inherit;
+}
+persian-date-picker > calendar-header.header > * {
+    height: 40px;
+    line-height: 40px !important;
+    display: inline-block;
+    vertical-align: middle;
+}
+persian-date-picker > calendar-header.header > i.fa-angle-right {
+    text-align: right;
+    margin-left: -40px;
+}
+persian-date-picker > calendar-days .week {
+    float: left;
+    width: 100%;
+    border-top: solid 1px #cccccc;
+}
+persian-date-picker > .week:first-child {
+    border-top:none;
+}
+persian-date-picker > calendar-week-name.week.names > span {
+    color: #2875c7;
+    font-weight: bold;
+}
+persian-date-picker > calendar-days .week > span.day, calendar-week-name.week  > span.day {
+    width: 14.28571429%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-left: solid 1px #cccccc;
+    font-size: 0.75em;
+    text-align: center;
+    line-height: 30px !important;
+    display: inline-block;
+    vertical-align: middle;
+    background: white;
+    cursor: pointer;
+    color: black;
+}
+persian-date-picker > calendar-days .week > span.day.today {
+      background: #E3F2FF;
+}
+persian-date-picker > calendar-days .week > span.day.different-month {
+    color:#C0C0C0;
+}
